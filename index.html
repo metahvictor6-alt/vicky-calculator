@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+  <meta name="description" content="Vicky is a simple, mobile-friendly calculator." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Vicky Calculator</title>
+</head>
+<body>
+  <main class="app-shell">
+    <section class="calculator" aria-label="Vicky calculator">
+      <header class="app-header">
+        <div class="brand-mark" aria-hidden="true">V</div>
+        <div>
+          <p class="eyebrow">Simple &amp; fast</p>
+          <h1>Vicky</h1>
+        </div>
+      </header>
+
+      <div class="display" aria-live="polite">
+        <div id="expression" class="expression">&nbsp;</div>
+        <div id="result" class="result">0</div>
+      </div>
+
+      <div class="keypad">
+        <button class="key function" data-action="clear">AC</button>
+        <button class="key function" data-action="delete" aria-label="Delete">⌫</button>
+        <button class="key operator" data-value="%">%</button>
+        <button class="key operator" data-value="÷">÷</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key operator" data-value="×">×</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key operator" data-value="−">−</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key operator" data-value="+">+</button>
+
+        <button class="key zero" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+        <button class="key equals" data-action="calculate">=</button>
+      </div>
+      <p class="hint">Tip: You can also use your keyboard.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

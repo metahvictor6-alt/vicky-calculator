@@ -1,0 +1,10 @@
+{
+  "name": "Vicky Calculator",
+  "short_name": "Vicky",
+  "description": "A simple, mobile-friendly calculator.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#111827",
+  "icons": []
+}
